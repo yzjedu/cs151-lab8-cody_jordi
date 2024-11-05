@@ -1,3 +1,12 @@
+# Programmers: Cody and Jordi
+# Course: CS151, Professor Zee
+# Due Date: November 7th, 2024
+# Lab Assignment: Lab 08
+# Problem Statement: Find probability of the different sums when rolling a pair of dice
+# Data In: amount of rolls
+# Data Out: Sums of (2-12)
+# Credits: none other than class notes
+
 import random
 count = 0
 sum_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -16,6 +25,7 @@ def roll_of_dice():
 
 
 def main():
+    print('This program shows the probability of the different sums when rolling a pair of dice\n')
     global num_rolls
     while True:
         num_rolls = int(input("How many dice do you want to roll? "))
