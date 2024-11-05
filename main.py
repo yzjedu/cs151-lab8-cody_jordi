@@ -7,6 +7,7 @@
 # Data Out: Sums of (2-12)
 # Credits: none other than class notes
 
+#initialize variables & import random
 import random
 count = 0
 sum_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -41,7 +42,7 @@ def main():
             break
         else:
             num_rolls = int(input("Error, Try again. Enter any value to continue: "))
-
+#call main function
 main()
 
 
