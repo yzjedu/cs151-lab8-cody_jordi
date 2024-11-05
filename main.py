@@ -17,16 +17,16 @@ def roll_of_dice():
 
 def main():
     global num_rolls
-    num_rolls = int(input("How many dice do you want to roll? "))
-    while num_rolls > 0:
+    while True:
+        num_rolls = int(input("How many dice do you want to roll? "))
         if num_rolls > 0:
             roll_of_dice()
             print(f'Rolling {num_rolls} pairs of dice')
             for sum_val in range(2, 13):
                 print(f"Sum of {sum_val}: {'*' * sum_counts[sum_val]}")
             break
-
-    num_rolls = int(input("Error, Try again. How many dice do you want to roll? "))
+        else:
+            num_rolls = int(input("Error, Try again. Enter any value to continue: "))
 
 main()
 
