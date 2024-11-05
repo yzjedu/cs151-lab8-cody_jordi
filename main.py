@@ -12,7 +12,9 @@ count = 0
 sum_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0]
 num_rolls = 0
 
-
+#Purpose: Rolling of the dice and getting the sums
+#Parameters: None
+#Return: None
 def roll_of_dice():
     global count
     global num_rolls
@@ -23,7 +25,9 @@ def roll_of_dice():
         sum_counts[roll_sum] += 1
         count += 1
 
-
+#Purpose: Main function for the program
+#Parameters: None
+#Return: None
 def main():
     print('This program shows the probability of the different sums when rolling a pair of dice\n')
     global num_rolls
