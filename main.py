@@ -7,7 +7,7 @@
 # Data Out: Sums of (2-12)
 # Credits: none other than class notes
 
-#initialize variables & import random
+#initialize variables & import random module
 import random
 count = 0
 sum_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0]
