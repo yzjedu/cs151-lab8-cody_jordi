@@ -32,18 +32,17 @@ def roll_of_dice():
 def main():
     print('This program shows the probability of the different sums when rolling a pair of dice\n')
     global num_rolls
-    num_rolls = -1  # Start with an invalid number to enter the loop
-
-    # Keep asking for a valid number of rolls until it's greater than zero
+#set invalid input so we enter the loop
+    num_rolls = -1
     while num_rolls <= 0:
-        user_input = input("How many times do you want to roll the dice? ")
-        if user_input.isdigit():  # Check if input is numeric
-            num_rolls = int(user_input)
+        user = input("How many times do you want to roll the dice? ")
+        if user.isdigit():
+            num_rolls = int(user)
             if num_rolls <= 0:
                 print("Please enter a positive integer.")
         else:
             print("Invalid input. Please enter a positive integer.")
-            # Call the function to roll the dice
+
     roll_of_dice()
     print(f'\nRolling {num_rolls} pairs of dice:')
     for sum_val in range(2, 13):
