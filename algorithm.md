@@ -1,7 +1,7 @@
 # Algorithm Document
 
 1. import the random module
-2. intialize variable count and num_rolls to 0
+2. initialize variable count and num_rolls to 0
 3. set sum_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0]
 4. Function 1
 * Purpose : Rolling of dice and getting the sum
@@ -25,15 +25,17 @@
 * Algorithm:
   1. output to the user the purpose of program
   2. globalize num_rolls
-  3. while True:
-     1. num_rolls = ask user to input the amount of dice they want to roll
-     2. if num_rolls > 0:
-        1. call roll_of_dice()
-        2. output to user how many dice they rolled
-        3. for sum_val in the range (2,13)
-            1. output the chart below (f'Sum of {sum_val}: {'*' * sum_count[sum_val]}")
-            2. add a break
-     3. else:
-        1. num_rolls = error message, ask user to try again, enter a value to try again
+  3. set num_rolls to invalid input to enter loop
+  4. while num_rolls <= 0
+     1. ask user to input how many rolls they want, store under user
+     2. if user is integer
+        1. num_rolls = int(user)
+        2. if num_rolls <= 0
+            1. output to the user to enter a positive integer
+     3. otherwise
+        1. tell user they entered an invalid input and to enter a positive integer
+  5. call roll_of_dice
+  6. output how many times user rolled the dice
+  7. output the table
 
 6. call main()
